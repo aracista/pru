@@ -1,0 +1,88 @@
+<app-header></app-header>
+
+<ion-content>
+<div class="bg-gray  margin-bottom-7">
+<ion-item class="item-transparent">
+  <ion-label class="custom-label" class="custom-label"  position="stacked">Handler Name</ion-label>
+  <ion-input [(ngModel)]="formDaftar.name" placeholder="Type Name Here.."></ion-input>
+</ion-item>
+<ion-item class="item-transparent">
+  <ion-label class="custom-label" position="stacked">Producer Name</ion-label>
+  <ion-input [(ngModel)]="formDaftar.Pname"></ion-input>
+</ion-item>
+<ion-item class="item-transparent">
+  <ion-label class="custom-label" position="stacked">Producer Code</ion-label>
+  <ion-input [(ngModel)]="formDaftar.Pcode"></ion-input>
+</ion-item>
+<ion-item class="item-transparent">
+  <ion-label class="custom-label" position="stacked">Source of Business (SoB)</ion-label>
+  <ion-input [(ngModel)]="formDaftar.sob"></ion-input>
+</ion-item>
+<ion-item class="item-transparent">
+  <ion-label class="custom-label" position="stacked">Level of Producer</ion-label>
+  <ion-input [(ngModel)]="formDaftar.lop"></ion-input>
+</ion-item>
+</div>
+
+<div class="bg-gray  margin-bottom-7">
+<ion-item class="item-transparent">
+  <ion-label class="custom-label" position="stacked">Home/Office Phone</ion-label>
+  <ion-input [(ngModel)]="formDaftar.officePhone"></ion-input>
+</ion-item>
+<ion-item class="item-transparent">
+  <ion-label class="custom-label" position="stacked">Email (Producer)</ion-label>
+  <ion-input [(ngModel)]="formDaftar.email"></ion-input>
+</ion-item>
+</div>
+
+<div class="bg-gray margin-bottom-7">
+<ion-item class="item-transparent">
+  <ion-label class="custom-label" position="stacked">Bank Refferal</ion-label>
+  <ion-input [(ngModel)]="formDaftar.bankRefferal"></ion-input>
+</ion-item>
+<ion-item class="item-transparent">
+  <ion-label class="custom-label" position="stacked">Bank Branch</ion-label>
+  <ion-input [(ngModel)]="formDaftar.bankBranch"></ion-input>
+</ion-item>
+</div>
+
+<div class="bg-gray  margin-bottom-7">
+<ion-item class="item-transparent">
+  <ion-label class="custom-label" position="stacked">Insurance Specialist Code</ion-label>
+  <ion-input [(ngModel)]="formDaftar.isCode"></ion-input>
+</ion-item>
+<ion-item class="item-transparent">
+  <ion-label class="custom-label" position="stacked">Insurance Specialist</ion-label>
+  <ion-input [(ngModel)]="formDaftar.is"></ion-input>
+</ion-item>
+</div>
+<ion-grid>
+	<ion-row>
+		<ion-col>
+  <ion-button expand="full" margin-top shape="round" (click)="submitRegister()">Save</ion-button>
+</ion-col>
+<ion-col>
+  <ion-button expand="full" margin-top shape="round" >Next</ion-button>
+</ion-col>
+</ion-row>
+</ion-grid>
+{{this.data.name}}
+<br>
+{{this.data.Pname}}
+<br>
+{{this.data.Pcode}}
+<br>
+{{this.data.sob}}
+<br>
+{{this.data.lop}}
+<br>
+{{this.data.officePhone}}
+<br>
+{{this.data.bankRefferal}}
+<br>
+{{this.data.bankBranch}}
+<br>
+{{this.data.isCode}}
+<br>
+{{this.data.is}}
+</ion-content>

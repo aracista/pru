@@ -1,25 +1,19 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>
-      Home
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<app-header></app-header>
 <ion-content>
-    <ion-card class="welcome-card">
-      <ion-img src="/assets/shapes.svg"></ion-img>
-      <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
-      </ion-card-content>
-    </ion-card>
+    
+      <ion-grid>
+        <ion-row>
+          <ion-col class="news">
+            <p>Indonesia: Indonesian rescue teams on Wednesday (Dec 26) struggled to reach remote areas on the western coast of Java amid torrential rain after a tsunami last week that killed more than 400 people.</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      
     <ion-list lines="none">
       <ion-list-header>
         <ion-label>Resources</ion-label>
@@ -41,4 +35,5 @@
         <ion-label>Theme Your App</ion-label>
       </ion-item>
     </ion-list>
+    <app-footer></app-footer>
 </ion-content>
